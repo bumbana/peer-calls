@@ -1,4 +1,4 @@
-BUILD_FLAGS := -ldflags "-X main.GitDescribe=$(shell git describe --always --tags --dirty)" -o peer-calls
+BUILD_FLAGS := -ldflags "-X main.GitDescribe=$(shell cat version.txt)" -o peer-calls
 
 .PHONY: coverage report build build-linux lint lint-env-variables
 

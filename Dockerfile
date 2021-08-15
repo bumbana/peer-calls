@@ -37,7 +37,7 @@ COPY --from=frontend  /src/build/ /src/build/
 
 RUN set -ex \
  && go build \
-      -ldflags "-X main.GitDescribe=$(git describe --always --tags --dirty)" \
+      -ldflags "-X main.GitDescribe=$(cat version.txt)" \
       -mod=readonly \
       -o peer-calls
 
