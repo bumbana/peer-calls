@@ -12,7 +12,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: peer-calls
+  IMAGE_NAME: bumbana/peer-calls
 
 jobs:
   lint:
