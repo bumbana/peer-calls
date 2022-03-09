@@ -1,4 +1,4 @@
-FROM node:12-alpine as frontend
+FROM node:16-alpine as frontend
 
 # Add dependency instructions and fetch node_modules
 COPY package.json package-lock.json /src/
@@ -34,6 +34,8 @@ RUN set -ex \
 # Add the application itself and build it
 COPY                  ./          /src/
 COPY --from=frontend  /src/build/ /src/build/
+
+ARG VERSION
 
 RUN set -ex \
  && go build \
