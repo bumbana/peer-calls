@@ -5,6 +5,8 @@ name: Peer Calls CI
 on:
   push:
     branches: [bumbana]
+    tags:
+      - v*
   pull_request:
     branches: [bumbana]
 

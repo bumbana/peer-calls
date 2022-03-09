@@ -1,6 +1,6 @@
 {
   "name": "peer-calls",
-  "version": "4.0.0",
+  "version": "4.1.1",
   "private": true,
   "description": "Group peer to peer video calls for anybody.",
   "repository": "https://github.com/peer-calls/peer-calls",
